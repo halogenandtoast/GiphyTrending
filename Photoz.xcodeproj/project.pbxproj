@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7340A4A11E46094000713CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7340A4A01E46094000713CBB /* AppDelegate.swift */; };
+		7340A4A31E46094000713CBB /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7340A4A21E46094000713CBB /* PhotosViewController.swift */; };
+		7340A4A61E46094100713CBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7340A4A41E46094100713CBB /* Main.storyboard */; };
+		7340A4A81E46094100713CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7340A4A71E46094100713CBB /* Assets.xcassets */; };
+		7340A4AB1E46094100713CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7340A4A91E46094100713CBB /* LaunchScreen.storyboard */; };
+		7340A4B31E460D1F00713CBB /* GiphyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7340A4B21E460D1F00713CBB /* GiphyApi.swift */; };
+		7340A4B91E46151300713CBB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7340A4B81E46151300713CBB /* Alamofire.framework */; };
+		7340A4BB1E46162C00713CBB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7340A4BA1E46162C00713CBB /* SwiftyJSON.framework */; };
+		7340A4BD1E4619CA00713CBB /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7340A4BC1E4619CA00713CBB /* FLAnimatedImage.framework */; };
+		7340A4C11E46EBFA00713CBB /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7340A4C01E46EBFA00713CBB /* SDWebImage.framework */; };
+		7340A4C31E46F28700713CBB /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7340A4C21E46F28700713CBB /* PhotoCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7340A49D1E46094000713CBB /* Photoz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photoz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7340A4A01E46094000713CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7340A4A21E46094000713CBB /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		7340A4A51E46094100713CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7340A4A71E46094100713CBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7340A4AA1E46094100713CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7340A4AC1E46094100713CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7340A4B21E460D1F00713CBB /* GiphyApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyApi.swift; sourceTree = "<group>"; };
+		7340A4B81E46151300713CBB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		7340A4BA1E46162C00713CBB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		7340A4BC1E4619CA00713CBB /* FLAnimatedImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAnimatedImage.framework; path = Carthage/Build/iOS/FLAnimatedImage.framework; sourceTree = "<group>"; };
+		7340A4C01E46EBFA00713CBB /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		7340A4C21E46F28700713CBB /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7340A49A1E46094000713CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7340A4B91E46151300713CBB /* Alamofire.framework in Frameworks */,
+				7340A4BB1E46162C00713CBB /* SwiftyJSON.framework in Frameworks */,
+				7340A4BD1E4619CA00713CBB /* FLAnimatedImage.framework in Frameworks */,
+				7340A4C11E46EBFA00713CBB /* SDWebImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7340A4941E46094000713CBB = {
+			isa = PBXGroup;
+			children = (
+				7340A49F1E46094000713CBB /* Photoz */,
+				7340A49E1E46094000713CBB /* Products */,
+				7340A4B71E46151300713CBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7340A49E1E46094000713CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7340A49D1E46094000713CBB /* Photoz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7340A49F1E46094000713CBB /* Photoz */ = {
+			isa = PBXGroup;
+			children = (
+				73B75A6B1E498344001459C6 /* Api */,
+				73B75A6E1E498374001459C6 /* Resources */,
+				73B75A6C1E498360001459C6 /* Controllers */,
+				73B75A6D1E498368001459C6 /* Views */,
+			);
+			path = Photoz;
+			sourceTree = "<group>";
+		};
+		7340A4B71E46151300713CBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7340A4C01E46EBFA00713CBB /* SDWebImage.framework */,
+				7340A4BC1E4619CA00713CBB /* FLAnimatedImage.framework */,
+				7340A4BA1E46162C00713CBB /* SwiftyJSON.framework */,
+				7340A4B81E46151300713CBB /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73B75A6B1E498344001459C6 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				7340A4B21E460D1F00713CBB /* GiphyApi.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		73B75A6C1E498360001459C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7340A4A21E46094000713CBB /* PhotosViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		73B75A6D1E498368001459C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7340A4C21E46F28700713CBB /* PhotoCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		73B75A6E1E498374001459C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7340A4A01E46094000713CBB /* AppDelegate.swift */,
+				7340A4A41E46094100713CBB /* Main.storyboard */,
+				7340A4A71E46094100713CBB /* Assets.xcassets */,
+				7340A4A91E46094100713CBB /* LaunchScreen.storyboard */,
+				7340A4AC1E46094100713CBB /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7340A49C1E46094000713CBB /* Photoz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7340A4AF1E46094100713CBB /* Build configuration list for PBXNativeTarget "Photoz" */;
+			buildPhases = (
+				7340A4991E46094000713CBB /* Sources */,
+				7340A49A1E46094000713CBB /* Frameworks */,
+				7340A49B1E46094000713CBB /* Resources */,
+				7340A4B61E4614BE00713CBB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Photoz;
+			productName = Photoz;
+			productReference = 7340A49D1E46094000713CBB /* Photoz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7340A4951E46094000713CBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "matthew-mongeau";
+				TargetAttributes = {
+					7340A49C1E46094000713CBB = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7340A4981E46094000713CBB /* Build configuration list for PBXProject "Photoz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7340A4941E46094000713CBB;
+			productRefGroup = 7340A49E1E46094000713CBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7340A49C1E46094000713CBB /* Photoz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7340A49B1E46094000713CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7340A4AB1E46094100713CBB /* LaunchScreen.storyboard in Resources */,
+				7340A4A81E46094100713CBB /* Assets.xcassets in Resources */,
+				7340A4A61E46094100713CBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7340A4B61E4614BE00713CBB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FLAnimatedImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7340A4991E46094000713CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7340A4A31E46094000713CBB /* PhotosViewController.swift in Sources */,
+				7340A4A11E46094000713CBB /* AppDelegate.swift in Sources */,
+				7340A4B31E460D1F00713CBB /* GiphyApi.swift in Sources */,
+				7340A4C31E46F28700713CBB /* PhotoCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7340A4A41E46094100713CBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7340A4A51E46094100713CBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7340A4A91E46094100713CBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7340A4AA1E46094100713CBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7340A4AD1E46094100713CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7340A4AE1E46094100713CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7340A4B01E46094100713CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Photoz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = d.Photoz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7340A4B11E46094100713CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Photoz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = d.Photoz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7340A4981E46094000713CBB /* Build configuration list for PBXProject "Photoz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7340A4AD1E46094100713CBB /* Debug */,
+				7340A4AE1E46094100713CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7340A4AF1E46094100713CBB /* Build configuration list for PBXNativeTarget "Photoz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7340A4B01E46094100713CBB /* Debug */,
+				7340A4B11E46094100713CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7340A4951E46094000713CBB /* Project object */;
+}

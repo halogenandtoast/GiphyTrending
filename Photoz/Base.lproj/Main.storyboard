@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fOD-hs-MQy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6bJ-Up-52w">
+            <objects>
+                <navigationController id="fOD-hs-MQy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M1O-kK-5VW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gSa-ZR-ny9" kind="relationship" relationship="rootViewController" id="xtS-2O-KxZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c69-bI-YPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-994" y="-6"/>
+        </scene>
+        <!--Trending-->
+        <scene sceneID="Hpe-Kk-GNy">
+            <objects>
+                <collectionViewController id="gSa-ZR-ny9" customClass="PhotosViewController" customModule="Photoz" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EDa-ny-1kA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z6U-iD-iOj">
+                            <size key="itemSize" width="132" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="LYy-fW-Vqg" customClass="PhotoCollectionViewCell" customModule="Photoz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="132" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="132" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qPd-rj-zMR" customClass="FLAnimatedImageView">
+                                            <rect key="frame" x="0.0" y="0.0" width="132" height="150"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="qPd-rj-zMR" firstAttribute="height" secondItem="LYy-fW-Vqg" secondAttribute="height" id="7PX-vu-4pv"/>
+                                    <constraint firstItem="qPd-rj-zMR" firstAttribute="width" secondItem="LYy-fW-Vqg" secondAttribute="width" id="E5r-dQ-FZz"/>
+                                    <constraint firstItem="qPd-rj-zMR" firstAttribute="centerX" secondItem="LYy-fW-Vqg" secondAttribute="centerX" id="lVa-b4-45A"/>
+                                    <constraint firstItem="qPd-rj-zMR" firstAttribute="centerY" secondItem="LYy-fW-Vqg" secondAttribute="centerY" id="yUn-10-sMH"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="qPd-rj-zMR" id="93M-Pa-hOK"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="gSa-ZR-ny9" id="2wN-Ih-OZJ"/>
+                            <outlet property="delegate" destination="gSa-ZR-ny9" id="zMv-jl-2Xu"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Trending" id="wCF-l2-xEX"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddM-nX-r82" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90.400000000000006" y="1.3493253373313345"/>
+        </scene>
+    </scenes>
+</document>
